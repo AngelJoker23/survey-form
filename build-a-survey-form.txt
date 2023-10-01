@@ -1,0 +1,156 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">A quick survey form project.</p>
+    <form id="survey-form" method="post">
+      <fieldset>
+      <label id="name-label">Enter your name: <input id="name" name="name" type="text" placeholder="Name" required /></label>
+      <label id="email-label">Enter your email: <input id="email" type="email" placeholder="Enter Email" name="email" required /></label>
+      <label id="number-label">Enter your Age(0ptional): <input id="number" type="number" min="13" max="120" placeholder="Age" name="age" /></label>
+      </fieldset>
+      <fieldset>
+      <label for="current-position" id="current-position">Current position: 
+      <select id="dropdown" name="current-position">
+        <option value="">(select one)</option>
+        <option value="1">Student</option>
+        <option value="2">Full-Time</option>
+        <option value="3">Part-Time</option>
+        <option value="4">Unemployed</option>
+        <option value="5">Searching</option>
+        <option value="6">Prefer Not To Answer</option>
+      </select>
+      </label>
+      </fieldset>
+      <fieldset>
+      </label for="carrer" id="carrer" name="carrer" class="inline">Would you consider a carrer in Coding?</label>
+      <label for="carrer"><input id="carrer" type="checkbox" name="carrer" value="1"/>Yes!</label>
+      <label for="carrer"><input id="carrer" type="checkbox" name="carrer" value="2" />No!</label>
+      <label for="carreer"><input id="carrer" type="checkbox" name="carrer" value="3" />Undecided!</label>
+      </fieldset>
+      <fieldset>
+      <label for="knowledge" id="knowledge" name="knowledge">What is your current coding knowledge?</label>
+      <select id="knowledge" name="knowledge" type="radio">
+        <option value="">(select one)</option>
+        <option value="1">I am an Expert!</option>
+        <option value="2">I know some coding!</option>
+        <option value="3">Complete Newbie!</option>
+      </select>
+      </fieldset>
+      <fieldset>
+      <label for="interests" id="interests" name="interest">What are your interests?</label>
+      <label id="interests"><input id="interest" type="checkbox" name="interests" class="inline" value="1" />Front-End Development</label>
+      <label for="interests" id="interests"><input id="interests" name="interests" type="checkbox" value="2" />Back-End Development</label>
+      <label for="interests" id="interests"><input id="interests" type="checkbox" value="3" name="interests" />Full-Stack Development</label>
+      <label for="interests" id="interests"><input id="interests" name="interests" value="4" type="checkbox" />Game Development</label>
+      <label for="interests" id="interests"><input id="interests" name="interests" value="5" type="checkbox" />Data Analysis</label>
+      <label for="interests" id="interests"><input id="interests" name="interests" value="6" type="checkbox" />Software Engineering</label>
+      <label for="interests" id="interests"><input id="interests" name="interests" value="7" type="checkbox" />Other</label>
+      </fieldset>
+      <fieldset>
+      <label for="coding-languages" id="coding-languages">What languages are you familiar with?</label>
+      <label for="coding-languages" id="coding-languages"><input id="coding-languages" name="coding-languages" value="1" type="checkbox" />C++</label>
+      <label for="coding-languages" id="coding-languages"><input id="coding-languages" name="coding-languages" value="2" type="checkbox" />C#</label>
+      <label for="coding-languages" id="coding-languages"><input id="coding-languages" name="coding-languages" value="3" type="checkbox" />Python</label>
+      <label for="coding-languages" id="coding languages"><input id="coding-languages" name="coding-languages" value="4" type="checkbox" />JavaScript/Java</label>
+      <label for="coding-languages" id="coding-languages"><input id="coding-languages" name="coding-languages" value="5" type="checkbox" />HTML/CSS</label>
+      <label for="coding-languages" id="coding-languages"><input id="coding-languages" name="coding-languages" value="6" type="checkbox" />Ruby</label>
+      <label for="coding-languages" id="coding-languages"><input id="coding-languages" name="coding-languages" value="7" type="checkbox" />SQL</label>
+      <label for="coding-languages" id="coding-languages"><input id="coding-languages" name="coding-languages" value="8" type="checkbox" />Other</label>
+      </fieldset>
+      <fieldset>
+        <label for="education" id="education">Are you planning on furthering your education?</label>
+        <label for="education"><input id="education" type="radio" name="education" class="inline" value="1" />YES!</label>
+        <label for="education"><input id="education" type="radio" name="education" class="inline" value="2" />No.</label>
+      </fieldset>
+      <fieldset>
+        <label for="comments">Please add any additional comments: <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Add comments..."></textarea>
+        </label>
+      </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: blue;
+  color: #1b1b32;
+  font-family: Tahoma;
+  font-size: 18px;
+}
+
+h1, p{
+  margin: 1em auto;
+  text-align: center;
+}
+
+form{
+  width: 60vw;
+  max-width: 500;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset{
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type{
+  border-bottom: none;
+}
+
+label{
+  display: block;
+  margin: 0,5rem 0;
+}
+
+input, textarea, select{
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea{
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline{
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"]{
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+
+** end of undefined **
+
